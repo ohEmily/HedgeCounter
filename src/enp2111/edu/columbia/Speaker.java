@@ -30,16 +30,38 @@ public class Speaker
 		this.speakerName = speakerName;
 		hedgesUsed = new LinkedList<String>();
 		numberOfWords = 0;
+		numberOfPropHedges = 0;
+		numberOfRelHedges = 0;
 		numberOfHedges = 0;
 	}
 	
 	/**
-	 * Makes note of the hedge, if it is a hedge.
+	 * Registers the hedge, if it is a hedge.
 	 * @param possibleHedge
 	 */
-	public void considerHedge(String possibleHedge)
+	public boolean considerHedge(String possibleHedge)
 	{
-		
+		for (int i = 0; i < Tester.POTENTIAL_PROP_HEDGES.length; i++)
+		{
+			if (possibleHedge.contains(Tester.POTENTIAL_PROP_HEDGES[i]))
+			{
+				numberOfPropHedges++;
+				numberOfHedges++;
+				addToHedgeList(possibleHedge);
+				return true;
+			}
+		}
+		for (int i = 0; i < Tester.POTENTIAL_REL_HEGES.length; i++)
+		{
+			if (possibleHedge.contains(Tester.POTENTIAL_REL_HEGES[i]))
+			{
+				numberOfRelHedges++;
+				numberOfHedges++;
+				addToHedgeList(possibleHedge);
+				return true;
+			}
+		}
+		return false;
 	}
 	
 	/**
@@ -47,9 +69,13 @@ public class Speaker
 	 */
 	public String toString()
 	{
-		return speakerName + ":\n" + "number of words spoken: "
-				+ numberOfWords + " number of hedges used: " + 
-				numberOfHedges + "\n";
+		return 
+				speakerName + ":\n\t" + 
+				"number of words spoken: "+ numberOfWords + "\n\t" +
+				"total number of hedges used: " + numberOfHedges + "\n\t\t" + 
+				"number of relational hedges: " + numberOfRelHedges + "\n\t\t" +
+				"number of propositional hedges: " + numberOfPropHedges + "\n"
+				;
 	}
 	
 	public void incrementWords()

@@ -68,33 +68,11 @@ public class Parser
 			// skip any word containing a digit; assumed to be e.g. timestamp
 			while (thisWord.matches(".*\\d.*"))
 				thisWord = scanner.next();
-			// fo
 			currentSpeaker.incrementWords();
-			if (isHedge(thisWord))
-			{
-				currentSpeaker.incrementHedges();
-				currentSpeaker.addToHedgeList(thisWord);
-			}
-//			System.out.print(thisWord + " "); // Testing
+			currentSpeaker.considerHedge(thisWord);
 		}
 		scanner.close();
 		return currentSpeaker;
-	}
-  
-	/** 
-	 * Returns true if the word is found in the hedge list, 
-	 * false if it is not.
-	 * @param aWord
-	 * @return
-	 */
-	private boolean isHedge(String aWord)
-	{
-		for (int i = 0; i < Tester.POTENTIAL_HEDGES.length; i++)
-		{
-			if (aWord.contains(Tester.POTENTIAL_HEDGES[i]))
-				return true;
-		}
-		return false;
 	}
 	
 	/** 
