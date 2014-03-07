@@ -5,17 +5,20 @@ package enp2111.edu.columbia;
  * speaker from the list of speakers.
  */
 
-import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
 
 public class SpeakerList {
-	private ArrayList<Speaker> speakerList;
+	private HashMap<String, Speaker> speakerList;
 	
 	/**
 	 * Default constructor. Initialize empty speakerList.
 	 */
 	public SpeakerList()
 	{
-		speakerList = new ArrayList<Speaker>();
+		speakerList = new HashMap<String, Speaker>();
 	}
 	
 	/**
@@ -25,10 +28,10 @@ public class SpeakerList {
 	 */
 	public SpeakerList(String ... speakerNames)
 	{
-		speakerList = new ArrayList<Speaker>();
+		speakerList = new HashMap<String, Speaker>();
 		for (int i = 0; i < speakerNames.length; i++)
 		{
-			speakerList.add(new Speaker(speakerNames[i]));
+			speakerList.put(speakerNames[i], (new Speaker(speakerNames[i])));
 		}
 	}
 	
@@ -39,15 +42,7 @@ public class SpeakerList {
 	 */
 	public SpeakerList add(Speaker newSpeaker)
 	{
-		for (int i = 0; i < speakerList.size(); i++)
-		{
-			if (speakerList.get(i).getSpeakerName().equals(newSpeaker.getSpeakerName()))
-			{
-				System.out.println("Speaker already exists");
-				speakerList.set(i, newSpeaker);
-			}
-		}
-		speakerList.add(newSpeaker);
+		speakerList.put(newSpeaker.getSpeakerName(), newSpeaker);
 		return this;
 	}
 	
@@ -57,12 +52,13 @@ public class SpeakerList {
 	 * */
 	public Speaker getSpeaker(String speakerName)
 	{
-		for (Speaker each : speakerList)
+		Speaker speaker;
+		if ((speaker = speakerList.get(speakerName)) != null)
 		{
-			if (each.getSpeakerName().equals(speakerName))
-				return each;
+			return speaker;
 		}
-		return new Speaker(speakerName);
+		speakerList.put(speakerName, new Speaker(speakerName));
+		return speakerList.get(speakerName);
 	}
 	
 	/**
@@ -71,10 +67,17 @@ public class SpeakerList {
 	 */
 	public String toString()
 	{
-		String returnVal = "Speaker List:\n";
-		for (Speaker each : speakerList)
-			returnVal += each.toString();
-		returnVal += "\nNumber of speakers: " + speakerList.size() + "\n";
-		return returnVal;
+		String returnVal = "Speaker List:\n";	
+		int numberOfSpeakers = -1; // start at -1 to make up for "unassigned" values
+		Iterator<Entry<String, Speaker>> it = speakerList.entrySet().iterator();
+	    while (it.hasNext())
+	    {
+	        Map.Entry<String, Speaker> pairs = (Map.Entry<String, Speaker>)it.next();
+	        returnVal += pairs.getValue().toString();
+	        numberOfSpeakers++;
+	        it.remove(); // avoids a ConcurrentModificationException
+	    }
+		returnVal += "\nNumber of speakers: " + numberOfSpeakers + "\n";
+	    return returnVal;
 	}
 }

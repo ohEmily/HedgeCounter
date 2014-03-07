@@ -89,9 +89,9 @@ public class Parser
 	 */
 	private boolean isHedge(String aWord)
 	{
-		for (int i = 0; i < Tester.POSSIBLE_HEDGE_LIST.length; i++)
+		for (int i = 0; i < Tester.POTENTIAL_HEDGES.length; i++)
 		{
-			if (aWord.contains(Tester.POSSIBLE_HEDGE_LIST[i]))
+			if (aWord.contains(Tester.POTENTIAL_HEDGES[i]))
 				return true;
 		}
 		return false;

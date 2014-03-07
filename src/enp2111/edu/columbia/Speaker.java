@@ -12,6 +12,8 @@ public class Speaker
 	private String speakerName;
 	private int numberOfWords;
 	private int numberOfHedges;
+	private int numberOfPropHedges;
+	private int numberOfRelHedges;
 	private LinkedList<String> hedgesUsed;
 
 	/** Default constructor is made private because a speaker should have
@@ -29,6 +31,15 @@ public class Speaker
 		hedgesUsed = new LinkedList<String>();
 		numberOfWords = 0;
 		numberOfHedges = 0;
+	}
+	
+	/**
+	 * Makes note of the hedge, if it is a hedge.
+	 * @param possibleHedge
+	 */
+	public void considerHedge(String possibleHedge)
+	{
+		
 	}
 	
 	/**
