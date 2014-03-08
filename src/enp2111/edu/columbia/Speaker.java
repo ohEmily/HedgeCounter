@@ -1,5 +1,6 @@
 package enp2111.edu.columbia;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 
@@ -11,10 +12,12 @@ public class Speaker
 {
 	private String speakerName;
 	private int numberOfWords;
-	private int numberOfHedges;
 	private int numberOfPropHedges;
 	private int numberOfRelHedges;
 	private LinkedList<String> hedgesUsed;
+	
+	private ArrayList<Boolean> sentences; // true if had hedge(s)
+	private ArrayList<Boolean> turns; // true if had hedge(s)
 
 	/** Default constructor is made private because a speaker should have
 	 * a name. */
@@ -32,7 +35,8 @@ public class Speaker
 		numberOfWords = 0;
 		numberOfPropHedges = 0;
 		numberOfRelHedges = 0;
-		numberOfHedges = 0;
+		sentences = new ArrayList<Boolean>();
+		turns = new ArrayList<Boolean>();
 	}
 	
 	/**
@@ -46,7 +50,6 @@ public class Speaker
 			if (possibleHedge.contains(Tester.POTENTIAL_PROP_HEDGES[i]))
 			{
 				numberOfPropHedges++;
-				numberOfHedges++;
 				addToHedgeList(possibleHedge);
 				return true;
 			}
@@ -56,7 +59,6 @@ public class Speaker
 			if (possibleHedge.contains(Tester.POTENTIAL_REL_HEGES[i]))
 			{
 				numberOfRelHedges++;
-				numberOfHedges++;
 				addToHedgeList(possibleHedge);
 				return true;
 			}
@@ -72,20 +74,80 @@ public class Speaker
 		return 
 				speakerName + ":\n\t" + 
 				"number of words spoken: "+ numberOfWords + "\n\t" +
-				"total number of hedges used: " + numberOfHedges + "\n\t\t" + 
+				"total number of hedges used: " + (numberOfRelHedges + numberOfPropHedges) + "\n\t\t" + 
 				"number of relational hedges: " + numberOfRelHedges + "\n\t\t" +
-				"number of propositional hedges: " + numberOfPropHedges + "\n"
+				"number of propositional hedges: " + numberOfPropHedges + "\n\t" +
+				"number of turns: " + sentences.size() + "\n"
 				;
+	}
+	
+	public void incrementHedgedTurn()
+	{
+		turns.add(true);
+	}
+	
+	public void incrementUnhedgedTurn()
+	{
+		turns.add(false);
+	}
+	
+	public void incrementHedgedSentence()
+	{
+		sentences.add(true);
+	}
+	
+	public void incrementUnhedgedSentence()
+	{
+		sentences.add(false);
+	}
+	
+	public int getNumberOfSentences()
+	{
+		return sentences.size();
+	}
+	
+	public int getNumberOfTurns()
+	{
+		return turns.size();
+	}
+	
+	public int getNumberOfPropHedges()
+	{
+		return numberOfPropHedges;
+	}
+	
+	public int getNumberOfRelHedges()
+	{
+		return numberOfRelHedges;
+	}
+	
+	/**
+	 * @return the number of turns that have hedges in them
+	 */
+	public int getNumberOfHedgedSentences()
+	{
+		int numberOfHedgedSentences = 0;
+		for (boolean each : sentences)
+			if (each)
+				numberOfHedgedSentences++;
+		return numberOfHedgedSentences;
+	}
+
+	/**
+	 * @return the number of turns that have hedges in them
+	 */
+	public int getNumberOfHedgedTurns()
+	{
+		int numberOfHedgedTurns = 0;
+		for (boolean each : turns)
+			if (each)
+				numberOfHedgedTurns++;
+		return numberOfHedgedTurns;
 	}
 	
 	public void incrementWords()
 	{
 		numberOfWords++;
-	}
-	
-	public void incrementHedges()
-	{
-		numberOfHedges++;
 	}
 	
 	public void addToHedgeList(String hedge)

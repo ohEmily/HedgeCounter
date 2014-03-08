@@ -59,6 +59,7 @@ public class Parser
 	 */
 	public Speaker findHedgesInLine(String aLine, Speaker currentSpeaker)
 	{
+		boolean hedgePresent = false;
 		//use a second Scanner to parse the content of each line 
 		Scanner scanner = new Scanner(aLine);
 		scanner.useDelimiter("\\s+");
@@ -69,8 +70,23 @@ public class Parser
 			while (thisWord.matches(".*\\d.*"))
 				thisWord = scanner.next();
 			currentSpeaker.incrementWords();
-			currentSpeaker.considerHedge(thisWord);
+			if(currentSpeaker.considerHedge(thisWord))
+				hedgePresent = true;
+			
+			if (thisWord.contains(".") || (!scanner.hasNext())) // if a period or end of paragraph
+			{
+				if (hedgePresent)
+					currentSpeaker.incrementHedgedSentence();
+				else
+					currentSpeaker.incrementUnhedgedSentence();
+			}
 		}
+		// after reached the end of the line
+		if (hedgePresent)
+			currentSpeaker.incrementHedgedTurn();
+		else
+			currentSpeaker.incrementUnhedgedTurn();
+
 		scanner.close();
 		return currentSpeaker;
 	}
