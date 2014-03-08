@@ -1,5 +1,6 @@
 package enp2111.edu.columbia;
 
+import java.io.File;
 import java.io.IOException;
 
 public class Tester
@@ -22,15 +23,19 @@ public class Tester
 		"virtually", "basically", "roughly", "somewhat", "somehow", "partially"
 	};
 	
-	public static final String[] HEDGE_LABELS = { "<\\hProp>", "<\\hRel>"};
-	
-	public static final String FILENAME = "C:\\Users\\Emily Pakulski\\Google "
-			+ "Drive\\Work\\Speech Lab\\NIST_20011115-1050_NONE_NONE.txt";
+	public static final String[] HEDGE_LABELS = { "<\\hProp>", "<\\hRel>" };
 	
 	public static void main(String[] args) throws IOException
 	{
-		Parser parser = new 
-				Parser(FILENAME);
+		System.out.println("This program will run with the default demo text \n"
+				+ "file if you didn't enter any arguments.\n\n");
+		String filename = "";
+		if (args.length == 0)
+			filename = (new File("").getAbsolutePath()).concat("\\demo_data.txt");
+		else
+			filename = args[0];
+		
+		Parser parser = new Parser(filename);
 		parser.parseByLine();
 		System.out.println(parser.toString());
 	}

@@ -19,7 +19,6 @@ public class SpeakerList
 	private int numberOfTurns;
 	private int numberOfSentences;
 	private int numberOfHedgedSentences;
-	private int numberOfHedges;
 	private int numberOfPropHedges;
 	private int numberOfRelHedges;
 	
@@ -30,12 +29,11 @@ public class SpeakerList
 	{
 		speakerList = new HashMap<String, Speaker>();
 	
-		numberOfSpeakers = 0;
+		numberOfSpeakers = -1; // start at -1 to make up for "unassigned" values
 		numberOfHedgedTurns = 0;
 		numberOfTurns = 0;
 		numberOfSentences = 0;
 		numberOfHedgedSentences = 0;
-		numberOfHedges = 0;
 		numberOfPropHedges = 0;
 		numberOfRelHedges = 0;
 	}
@@ -92,8 +90,7 @@ public class SpeakerList
 		collectMetrics();
 		
 		// get all speaker stats
-		String returnVal = "Speaker List:\n";	
-		int numberOfSpeakers = -1; // start at -1 to make up for "unassigned" values
+		String returnVal = "Speaker List:\n";
 		Iterator<Entry<String, Speaker>> it = speakerList.entrySet().iterator();
 	    while (it.hasNext())
 	    {
@@ -111,7 +108,7 @@ public class SpeakerList
 				"Percentage of sentences containing hedges: " + (100 * numberOfHedgedSentences / numberOfTurns) + "%\n" +
 				"Number of relational hedges: " + numberOfRelHedges + "\n" +
 				"Number of propositional hedges: " + numberOfPropHedges + "\n" +
-				"Number of hedges: " + numberOfHedges + "\n"
+				"Number of hedges: " + (numberOfPropHedges + numberOfRelHedges) + "\n"
 				;
 		
 	    return returnVal;
@@ -133,8 +130,6 @@ public class SpeakerList
 	        numberOfHedgedTurns += pairs.getValue().getNumberOfHedgedTurns();
 	        numberOfPropHedges += pairs.getValue().getNumberOfPropHedges();
 	        numberOfRelHedges += pairs.getValue().getNumberOfRelHedges();
-	        numberOfHedges += numberOfPropHedges + numberOfRelHedges;
-//	        it.remove(); // avoids a ConcurrentModificationException
 	    }
 	}
 }
