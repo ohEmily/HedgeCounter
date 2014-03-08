@@ -5,6 +5,21 @@ import java.io.IOException;
 
 public class Tester
 {	
+	public static void main(String[] args) throws IOException
+	{
+		System.out.println("This program will run with the default demo text \n"
+				+ "file if you didn't enter any arguments.\n\n");
+		String filename = "";
+		if (args.length == 0)
+			filename = (new File("").getAbsolutePath()).concat("\\demo_data.txt");
+		else
+			filename = args[0];
+		
+		Parser parser = new Parser(filename);
+		parser.parseByLine();
+		System.out.println(parser.toString());
+	}
+	
 	// TODO multiword hedges
 	// TODO make hedge list editable from outside (i.e. file I/O)
 	public static final String[] POTENTIAL_HEDGES = {
@@ -24,19 +39,4 @@ public class Tester
 	};
 	
 	public static final String[] HEDGE_LABELS = { "<\\hProp>", "<\\hRel>" };
-	
-	public static void main(String[] args) throws IOException
-	{
-		System.out.println("This program will run with the default demo text \n"
-				+ "file if you didn't enter any arguments.\n\n");
-		String filename = "";
-		if (args.length == 0)
-			filename = (new File("").getAbsolutePath()).concat("\\demo_data.txt");
-		else
-			filename = args[0];
-		
-		Parser parser = new Parser(filename);
-		parser.parseByLine();
-		System.out.println(parser.toString());
-	}
 }
