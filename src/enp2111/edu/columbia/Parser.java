@@ -10,7 +10,6 @@ import java.util.Scanner;
 /**
  * Assumes that each new speaker is separated by an empty line.
  * Assumes that words (contiguous characters surrounded by whitespace)
- * cannot contain numerical digits (i.e. speakers would say "one" not "1").
  * 
  * Based on: http://www.javapractices.com/topic/TopicAction.do?Id=87
  */
@@ -21,6 +20,8 @@ public class Parser
 	public static final String NEW_SPEAKER_IDENTIFIER = "Subj_";
 	
 	private SpeakerList speakerList;
+	
+	private static final int TIMESTAMP_LENGTH = 11; // e.g. 0.150	10.450
 	
 	/**
    	Constructor.
@@ -36,23 +37,35 @@ public class Parser
 	 * replaced by a new empty HashMap every time a new speaker starts speaking. */
 	public final void parseByLine() throws IOException 
 	{
-		Speaker speaker;
+//		Speaker speaker;
 		try (Scanner scanner = new Scanner(filePath, Tester.ENCODING.name()))
 		{
 			while (scanner.hasNextLine()) // loop until EOF
 			{
-				String currentLine = scanner.nextLine();
-				speaker = speakerList.getSpeaker(findSpeakerName(currentLine));
-				if (currentLine.length() != 0)
+				String currentLine;
+				if ((currentLine = scanner.nextLine()).length() != 0)
 				{
-					speaker.containsMultiwordHedge(currentLine);
-					speaker = findHedgesInLine(currentLine, speaker);
-					speakerList = speakerList.add(speaker);
+					findMultiwordHedgesInLine(currentLine);
+					
 				}
 			}
 		}
 	}
   
+	public void findMultiwordHedgesInLine(String currentLine)
+	{
+		Speaker currentSpeaker = speakerList.getSpeaker(findSpeakerName(currentLine));
+		currentLine = currentLine.substring(TIMESTAMP_LENGTH, currentLine.length());
+		currentSpeaker.containsMultiwordHedge(currentLine);
+		currentSpeaker = findHedgesInLine(currentLine, currentSpeaker);
+		speakerList = speakerList.add(currentSpeaker);
+	}
+	
+	public final void parseByWord(String line)
+	{
+		
+	}
+	
 	/** 
    	 * Go through this line and return currentSpeaker with the number of 
    	 * hedges associated with currentSpeaker udated.
@@ -66,9 +79,6 @@ public class Parser
 		while (scanner.hasNext())
 		{
 			String thisWord = scanner.next();
-			// skip any word containing a digit; assumed to be e.g. timestamp
-			while (thisWord.matches(".*\\d.*"))
-				thisWord = scanner.next();
 			currentSpeaker.incrementWords();
 			if(currentSpeaker.isHedge(thisWord))
 				hedgePresent = true;
