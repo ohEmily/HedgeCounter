@@ -1,0 +1,29 @@
+looks like	hRel
+look like	hRel
+don't know	hRel
+not necessarily	hRel
+kind of	hProp
+not much	hProp
+a whole bunch	hProp
+a bunch	hProp
+a couple	hProp
+a few	hProp
+a little	hProp
+a little bit	hProp
+not really	hProp
+don't really	hProp
+and all that	hProp
+and so forth	hProp
+et cetera	hProp
+in my mind	hRel
+in my opinion	hRel
+their impression	hRel
+my impression	hRel
+in my understanding	hRel
+my thinking is	hRel
+my understanding is	hRel
+in my view	hRel
+if I'm understanding you correctly	hRel
+something or other	hProp
+so far	hProp
+at least	hProp

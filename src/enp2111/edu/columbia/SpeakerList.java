@@ -96,7 +96,6 @@ public class SpeakerList
 	    {
 	    	Map.Entry<String, Speaker> speaker = (Map.Entry<String, Speaker>)it.next();
 	        returnVal += speaker.toString();
-	        numberOfSpeakers++;
 	        it.remove(); // avoids a ConcurrentModificationException
 	    }
 		returnVal += "\nNumber of speakers: " + numberOfSpeakers + "\n" +

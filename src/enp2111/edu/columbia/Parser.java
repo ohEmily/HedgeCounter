@@ -18,7 +18,6 @@ import java.util.Scanner;
 public class Parser
 {
 	private final Path filePath;
-	private final static Charset ENCODING = StandardCharsets.UTF_8;  
 	public static final String NEW_SPEAKER_IDENTIFIER = "Subj_";
 	
 	private SpeakerList speakerList;
@@ -38,7 +37,7 @@ public class Parser
 	public final void parseByLine() throws IOException 
 	{
 		Speaker speaker;
-		try (Scanner scanner =  new Scanner(filePath, ENCODING.name()))
+		try (Scanner scanner = new Scanner(filePath, Tester.ENCODING.name()))
 		{
 			while (scanner.hasNextLine()) // loop until EOF
 			{

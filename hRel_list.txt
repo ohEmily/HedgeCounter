@@ -1,0 +1,56 @@
+think	
+thinks	
+thought
+	believe
+	believed
+	believes	
+consider	
+considers	
+considered	
+assume
+	assumes
+	assumed
+	understand	
+understands	
+understood
+	find	
+found	
+finds
+	appear	
+appears
+	appeared
+	seem
+	seems	
+seemed
+	suppose	
+supposes	
+supposed
+	guess	
+guesses	
+guessed
+	estimate
+	estimates
+	estimated
+	speculate	
+speculates	
+speculated
+	suggest	
+suggests	
+suggested	
+may	
+could	
+should	
+might	
+surely	
+probably	
+likely
+	may	be	
+perhaps	
+unsure	
+probable	
+unlikely	
+possibly
+	possible	
+read
+	say	
+says

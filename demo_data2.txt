@@ -1,0 +1,467 @@
+2411.925	2418.575	Subj_040:	This multivariate model accounts for about twenty-three percent is the variability in task success,
+
+2418.575	2424.450	Subj_040:	whereas speech recognition accuracy alone only counted for about eleven percent of the variability. 
+
+2424.450	2433.450	Subj_040:	This is still a fairly low level of ~R square, a fairly low level of the variability that's being explained by the model, 
+
+2433.450	2441.700	Subj_040:	so there are clearly other factors. um For instance, dialog handling abilities such as the ability to repair a misunderstanding. 
+
+2443.550	2450.575	Subj_040:	Lynn Walker of ~AT and ~T research did an extensive evaluation of the Communicator data looking at 
+
+2450.575	2456.650	Subj_040:	uh -- looking for a model of user satisfaction. And what she found was that 
+
+2456.650	2464.850	Subj_040:	factors that had to do with efficiency, such as the time it took and the number of sys- uh I'm sorry, the time it took for the user to 
+
+2465.625	2469.900	Subj_040:	uh to com- to perform the task, was the most important factor, 
+
+2469.900	2476.450	Subj_040:	followed by a couple of measures here that are both de- uh both
+
+2476.450	2485.875	Subj_040:	indicate task completion. When the sy- system actually suc- and the user successfully complete the task, then the system will 
+
+2485.875	2493.150	Subj_040:	recite the whole itinerary at the end on request, and it almost always does end up reciting the whole itinerary. So 
+
+2493.150	2499.600	Subj_040:	the average system words per turn partly reflects whether or not the task was completed. 
+
+2499.600	2508.650	Subj_040:	And task completion and system words per turn turned out to be the next-most important factors, followed by a speech recognition accuracy eh measure. 
+
+2509.500	2515.225	Subj_040:	uh So these are the kinds of things that account for this uh
+
+2515.225	2520.400	Subj_040:	some reasonable chunk of this variability when you hold word error rate constant. 
+
+2522.025	2533.450	Subj_040:	So, in summary, we conclude that speech recognac- speech recognition accuracy is an important determiner of task success, and that the effect appears to be linear, even to very high word error rates. 
+
+2534.725	2540.000	Subj_040:	User satisfaction falls off, it appears, above about a thirty-five percent word error rate. 
+
+2540.000	2544.800	Subj_040:	Efficiency becomes more variable about above about a thirty-five percent word error rate, 
+
+2544.800	2551.475	Subj_040:	which suggests that other factors begin to swamp the effects of word error rate above thirty-five percent, perhaps. 
+
+2552.225	2559.500	Subj_040:	And we think that efficiency is probably most interesting as an important determiner of user satisfaction, 
+
+2559.500	2566.850	Subj_040:	rather than as something to be optimized independently. Any questions? 
+
+2566.860	 2578.080	Subj_052:	Yeah, I have a question about eh efficiency. uh Mm I don't recall where you introdu- first introduced n- that as a term, and it it shows up in the final slide.
+
+2567.255  2579.776  Subj_052:  Yeah, I have a question about eh efficiency. ah I don't recall where you int- first introduced that as a term, but it it shows up in the final slide.
+
+2581.800	2584.575	Subj_040:	Mm. Yeah. 
+
+2582.025	2593.200	Subj_052:	There are measures of efficiency, but I don't see anything that's specifically w- w- -- labeled as efficiency.
+
+2590.025	2616.300	Subj_002:	The time and user words. There's actually sort of a little problem that you have. You've become so good at this material that you're now talking a great deal amount off slide. And so a lot of what you're saying doesn't pertain directly to an element of the slide. You did that a lot on your multivariate slide. 
+
+2591.500	2595.925	Subj_040:	This is. Okay. This is the point where I first introduced it. 
+
+2614.875	2625.275	Subj_052:	{breath} I I -- you know I think if you ah flag the the the term efficiency uh on this foil, that'll that'll
+
+2626.500	2628.225	Subj_052:	be useful because ah -- 
+
+2626.725	2633.050	Subj_040:	Oh. Here, you mean? Okay. Okay. 
+
+2628.675	2629.100	Subj_052:	Yeah.
+
+2629.950	2640.450	Subj_052:	Because ah you you refer to it at the end. Or else change the the reference to it as efficiency, you just call it time and user words. ah You know, either one, but 
+
+2636.525	2641.350	Subj_040:	Mhm. Okay. Mhm.
+
+2640.925	2658.750	Subj_002:	Actually, it is -- if you look at it compared to the other two, it is efficiency and the way it's calculated is in terms of time and user words. So I think eh he's right -- efficiency should be the label, with that as a sub-label maybe. Or just put that in parens or something. 
+
+2647.625	2648.100	Subj_040:	Yeah.
+
+2653.800	2659.075	Subj_040:	I'm not sure I can make a sub-label here, but I can talk to it. Yeah.
+
+2659.075	2662.300	Subj_052:	{breath} And I have ah another question. Go back a couple of foils.
+
+2662.275	2667.575	Subj_040:	Mhm. I'm going the wrong way, aren't I
+
+2663.075	2664.750	Subj_052:	uh Go back to --
+
+2665.325	2666.600	Subj_052:	ah just keep going. 
+
+2668.850	2677.775	Subj_052:	uh Go back some more, back some more, back some more, back some more, back some more. {laugh} 
+
+2678.475	2680.800	Subj_052:	Yeah. The ah this foil um 
+
+2681.475	2688.425	Subj_052:	you talk about the relationship between ~ASR accuracy and task success and say, is it linear. But um 
+
+2687.275	2687.675	Subj_040:	Mhm.
+
+2689.325	2693.600	Subj_052:	uh ah I I I don't know -- you you then say in the next slide 
+
+2694.075	2700.600	Subj_052:	ah Ha- ha- -- does task success go off a cliff. The- -- that implies kind of a piece-wise ah linearity.
+
+2697.875	2698.775	Subj_040:	Mhm. Yeah.
+
+2701.225	2705.300	Subj_052:	ah An- and you don't really show that at any point. 
+
+2706.175	2711.825	Subj_052:	But it's linear up to what point? uh uh The -- be- -- better question is, you know, how
+
+2710.850	2712.500	Subj_040:	We think it's linear all the way. 
+
+2712.425	2715.250	Subj_052:	how long is it linear? You know, is it linear -- 
+
+2718.800	2723.350	Subj_040:	Seems to be linear kind of to extraordinarily high levels of word error rate. 
+
+2722.100	2725.900	Subj_052:	ah Yeah, well then you need to make that point. That it's linear all the way. 
+
+2727.925	2729.100	Subj_040:	I thought I did. 
+
+2729.800	2731.525	Subj_052:	uh I didn't hear it. But 
+
+2731.875	2738.450	Subj_002:	Well, maybe the question is ((in that earlier slide)) is it linear or is it -- 
+
+2732.200	2732.675	Subj_052:	did -- 
+
+2732.375	2735.650	Subj_051:	Well, somebody said the answer to the question is no.
+
+2738.600	2742.900	Subj_040:	They're intended to be contrasting questions. Oops, I've overshot. 
+
+2747.100	2750.325	Subj_040:	I wish I could get rid of it. This. 
+
+2751.375	2764.775	Subj_002:	This. Yeah, maybe you should make that middle bullet a little more -- a little more flesh on it. Is it linear? Is it asymptotic? Is it you know -- 
+
+2761.700	2769.850	Subj_040:	Is it linear or does it go off a cliff? Yeah. Or does it go off a cliff? Uh-huh, okay. 
+
+2763.100	2771.325	Subj_052:	Is it linear all the way? Or, you know mm what what kind of -- what kind of model fits? Because you've derived a model. 
+
+2771.475	2774.025	Subj_040:	Yeah. Okay.
+
+2774.450	2777.125	Subj_022:	Oh, I have one comment to make. 
+
+2777.000	2784.775	Subj_040:	So these could all be kind of under relationship between ~ASR accuracy and task success. Okay. 
+
+2783.075	2784.200	Subj_002:	Mhm.
+
+2785.075	2797.000	Subj_022:	um On the slide when you present Lynn Walker results, I mean, shouldn't you talk about your result instead of her results? I don't know, I mean --
+
+2789.125	2790.900	Subj_040:	Mhm. Mhm.
+
+2798.700	2805.450	Subj_040:	I don't see any point in me going back and doing user satisfaction differently. She's done it exhaustively in my opinion. 
+
+2803.400	2804.125	Subj_050:	Mhm.
+
+2809.450	2843.775	Subj_002:	You should probably also give lip service to ((Paradise)) and tell people what it is, because it just pops up there, but nobody has -- um, I have my own list. For the ~ASR accuracy slide at the beginning of the talk, is that for two thousand or for two thousand one, or what is that for? Earlier, earlier. That one. 
+
+2815.400	2817.400	Subj_040:	uh I have it mentioned, don't I? 
+
+2821.850	2824.775	Subj_040:	Oh yeah, I do mention it. Okay, sure. 
+
+2838.700	2840.625	Subj_040:	Which slide here? 
+
+2843.600	2855.275	Subj_040:	That one. Oh, boy. um, I would guess it's two thousand one, but I would have to go back and look at it, now. 
+
+2856.100	2875.375	Subj_002:	Since we've very strongly talked about two different -- 
+
+2860.975	2869.000	Subj_040:	Yeah. Yeah. Okay. 
+
+2861.125	2861.525	Subj_050:	Mhm.
+
+2877.675	2878.750	Subj_050:	These are ((straighter)) 
+
+2878.125	2882.600	Subj_040:	Well it's not chopped on the original. It's something about the projection. 
+
+2878.975	2879.750	Subj_052:	Oh.
+
+2881.250	2881.675	Subj_050:	Hm. 
+
+2882.375	2883.250	Subj_002:	Mm okay.
+
+2883.450	2893.450	Subj_050:	These are straight ((word error rates )) right as we've always c- calculated them there's no attempts to do type of ((word error rate )) by content word or something. It just seems like that might be more
+
+2891.300	2892.600	Subj_002:	No.
+
+2892.025	2900.925	Subj_040:	We did that in two thousand and it turned out to not make any difference, and we did it to some degree in two thousand one and it still didn't make any difference. It turned out that the 
+
+2900.925	2908.100	Subj_040:	((took the)) usual word error rate we calculate has the strongest correlations with the other metrics. 
+
+2909.450	2915.600	Subj_040:	Similarly, Lynn Walker did sentence error rate, or utterance error rate, which turned out to have 
+
+2915.600	2918.525	Subj_040:	weaker correlations than our usual word error rate. 
+
+2918.825	2919.175	Subj_050:	Hm.
+
+2920.625	2925.325	Subj_022:	Because a lot of these sentences uh are a word. 
+
+2924.150	2926.550	Subj_052:	{laugh} {breath} uh Yeah.
+
+2924.550	2927.850	Subj_002:	Mhm. um Okay a few more
+
+2924.800	2925.400	Subj_050:	Nah.
+
+2927.025	2934.150	Subj_040:	Well it, I think it's because the abilities needed to recover from errors involve 
+
+2934.150	2939.475	Subj_040:	speech recognition accuracy on the non-domain words, 
+
+2939.475	2951.900	Subj_040:	and that's important enough to swamp whatever gain there might be from a little bit extra accuracy on airports and so forth. Go ahead.
+
+2952.125	2982.500	Subj_002:	It should have a year on it, I think. On your histogram by word error rate, your ~Y axis label is chopped. Yes, that one. Okay. um, okay, a few more. A couple of other notes. We might consider using slanted axis for your word error rates. It's kind of hard to read them straight up and down like that. So if you had used a diagonal. Select diagonal and they'll just slant it to the side -- and it will be a little bit easier. So I would just suggest you try it. um When you're talking about word error rates, don't say better than. Say higher than, because that's very misleading. You said better than thirty-five percent. 
+
+2963.775	2972.000	Subj_040:	I'm not sure they'll all fit, but I'll try. Yeah, yeah. Yeah, sure. 
+
+2975.050	2975.675	Subj_040:	Mhm.
+
+2983.025	2991.775	Subj_040:	Okay. Oh, I did. Uh-oh. Well, that's a speako. 
+
+2983.740	2985.840	Subj_051:	Meaning higher than thirty-five per-
+
+2983.725	3004.900	Subj_002:	Meaning higher. Yes. Also, since so much of your talk revolves around word error rate, you might just give a very short explanation of what it is for people who aren't in the know in the division. 
+
+2990.9283	2995.0464	Subj_042:	{breath} 
+
+2998.150	2998.875	Subj_040:	Ah.
+
+2999.175	3013.925	Subj_042:	Yeah uh especially what it means to have over a hundred percent word error rate. It does -- it appears in the slides and I mean I don't know what that means. {breath} 
+
+2999.625	3001.225	Subj_052:	{lipsmack} Surely everyone knows.
+
+3000.825	3003.225	Subj_022:	{laugh} 
+
+3001.130	3002.000	Subj_051:	(())
+
+3007.775	3010.775	Subj_040:	Yeah. You could explain word error rate briefly.
+
+3012.650	3013.775	Subj_022:	{laugh} 
+
+3014.500	3024.750	Subj_040:	You count insertions, deletions, and substitutions and you count the number of words in the reference transcript. 
+
+3024.750	3033.575	Subj_040:	You can have a lot of extra insertions, for instance, so that you have a large
+
+3033.575	3040.800	Subj_040:	ah a larger number of words in the speech recognizer output than you have do the reference transcript. 
+
+3042.7892	3044.0159	Subj_042:	 Okay. 
+
+3043.525	3045.075	Subj_050:	Could you go back one slide?
+
+3046.975	3054.600	Subj_050:	All right one more is the -- well it's the slide again where you ha- you show where you smooth the data. And you talk about smoothing the data.
+
+3048.225	3049.125	Subj_040:	Wrong direction. 
+
+3055.100	3065.225	Subj_050:	To me, I just I'm uneasy when someone says I smooth the data without s- someone telling me what you did to smooth that data. Bec- it just it seems like you're just all of a sudden playing with statistics and you're going to make it.
+
+3055.900	3059.175	Subj_052:	{laugh} {laugh} {breath} 
+
+3065.625	3068.025	Subj_050:	however you want. I think it might be worthwhile
+
+3068.750	3074.025	Subj_050:	just to take a moment to say exactly what was done. Because you said smoo- you know you talked about smoothing data and it's obviously doing something. 
+
+3074.550	3084.100	Subj_050:	But without knowing what was done to make that transform I think that it kind of le- it leaves me uneasy feeling about you know what was actually done to it.
+
+3082.750	3093.575	Subj_040:	I For each then I weighted it more heavily and then I weighted the two joining bins less and one bin further out even less. 
+
+3095.125	3104.350	Subj_050:	I think it's worth a description when you sto- before saying I smooth the data and going on if if you actually say what you did to smooth the data. I just I think it adds a little bit. For me it does anyways. 
+
+3098.950	3099.400	Subj_040:	Uh-huh.
+
+3101.725	3104.875	Subj_040:	Okay, is that a satisfactory explanation? 
+
+3103.250	3104.450	Subj_052:	uh uh uh 
+
+3104.900	3107.650	Subj_052:	Otherwise, it's it's uh it's it's witchcraft.
+
+3108.125	3109.350	Subj_022:	{breath} 
+
+3108.650	3112.100	Subj_040:	Is that a satisfactory explanation that I gave? Okay.
+
+3110.425	3111.100	Subj_052:	Yeah.
+
+3111.475	3112.000	Subj_050:	Sure.
+
+3113.650	3115.975	Subj_002:	um (( ))
+
+3115.375	3118.025	Subj_051:	Terms of five points (( ))
+
+3118.050	3125.225	Subj_040:	Okay. Center weighted five point smoothing ((would be)) Okay. Thank you. 
+
+3124.350	3148.350	Subj_002:	One suggestion maybe on your multivariate model slide is that you talk for a very long time on the slide and you say a lot of your main points actually aren't made on the slide, except for behaved as expected. So you might throw some call outs up there to add these points that you're making as you talk about this. 
+
+3133.275	3133.875	Subj_040:	Okay.
+
+3138.775	3139.350	Subj_052:	Hm.
+
+3148.350	3152.050	Subj_040:	Mhm. What points did I make? 
+
+3151.775	3162.000	Subj_002:	I don't uh I don't recall. But I recall you saying several things that seemed very important that weren't listed on the slide. 
+
+3158.175	3158.625	Subj_040:	mm.
+
+3164.125	3164.425	Subj_050:	Hm.
+
+3166.300	3172.175	Subj_040:	I don't know if I've said anything that's not on the slide. Let's see.
+
+3173.500	3177.325	Subj_050:	So I I don't know what people prefer. But when there's a laser pointer in the room
+
+3177.650	3183.050	Subj_050:	sometimes I I prefer for you to stand in back and use a laser pointer instead of reaching over the slide.
+
+3177.925	3195.975	Subj_002:	Maybe the fact is you were confusing me because you were doing a lot of gesturing and I'm not sure what you were -- 
+
+3179.000	3180.625	Subj_022:	Where is it?
+
+3181.850	3185.275	Subj_022:	Oh. Oh. 
+
+3186.750	3186.950	Subj_050:	Ye-
+
+3187.725	3188.150	Subj_050:	Right.
+
+3189.150	3197.425	Subj_050:	I don't know what you prefer. I myself prefer someone standing back and using laser pointer than than walking up and pointing to something because it becomes distracting. But
+
+3189.500	3190.650	Subj_022:	{breath} 
+
+3195.575	3196.200	Subj_040:	Okay.
+
+3196.075	3200.125	Subj_022:	I thought I was doing ((for)) that. 
+
+3199.625	3202.000	Subj_050:	Well I test both. I'm just cleaning it up.
+
+3201.375	3205.925	Subj_040:	((Let's, let's see))
+
+3202.275	3202.900	Subj_022:	Okay.
+
+3204.875	3209.850	Subj_002:	Did you have other important points other than these three bullets that you have? 
+
+3212.800	3220.800	Subj_040:	I don't think so. I basically talked about this is the multivariate model that I started with all the
+
+3220.800	3227.075	Subj_040:	I started with factors that I've already mentioned on the user questionnaire and so forth. 
+
+3227.075	3233.875	Subj_040:	It boiled down to these three being the most influential. There are ways of figuring out the 
+
+3233.875	3241.825	Subj_040:	relative contributions of the various factors, and I've given some data here to 
+
+3243.375	3248.325	Subj_040:	let people kind of assess for themselves what the contribution might be. 
+
+3248.9915	3255.3634	Subj_042:	And is it expected of the audience to know what a multivariate model is?
+
+3256.025	3256.625	Subj_040:	I don't know. 
+
+3257.0184	3260.3284	Subj_042: Because uh I I certainly don't, so.
+
+3259.525	3261.575	Subj_052:	Yeah, I don't think that's a safe assumption.
+
+3261.9835	3267.6106	Subj_042: And don't know what a (()) is, uh and things like that.
+
+3266.900	3270.150	Subj_040:	Yeah, oh yeah, I shouldn't just drop ~R square in. 
+
+3271.375	3273.075	Subj_052:	{lipsmack} ah Y- you know, if you're going to a- -- 
+
+3272.425	3281.175	Subj_040:	I said it account- I said the model accounted for twenty-three percent of the variability, which was really the way to say it for a general technical audience. 
+
+3279.025	3279.800	Subj_002:	Mhm.
+
+3287.950	3288.450	Subj_050:	Mhm.
+
+3288.425	3295.850	Subj_052:	{lipsmack} Well, I for one don't know what an ~R square value of zero point one one implies.
+
+3296.625	3310.300	Subj_040:	It implies that the model accounts for about eleven percent of the variability in eh the eh factor that's to be explained, in this case, task success. 
+
+3310.475	3311.200	Subj_052:	H- uh-huh.
+
+3310.975	3317.400	Subj_002:	So you add up your your ~R squareds and whatever's left is unexplained variability, basically. 
+
+3316.150	3316.950	Subj_052:	Mhm.
+
+3318.7097	3326.6124	Subj_042: So there's eighty-nine percent of data that's unexplained by the model -- uh the variable? 
+
+3324.125	3328.850	Subj_050:	No. Eleven percent is by word error rate. Yeah.
+
+3324.275	3327.200	Subj_052:	{breath} I mean tha- tha- the the comment that speech -- 
+
+3325.550	3328.425	Subj_040:	That's not explained by word error rate. 
+
+3328.400	3331.700	Subj_052:	the comment that speech recognition is not the dominant factor
+
+3328.5571	3330.0880	Subj_042: Oh, okay. 
+
+3331.875	3334.550	Subj_052:	follows from the fact that only eleven percent 
+
+3335.300	3339.700	Subj_052:	of the variability uh is i- is accounted for. 
+
+3339.625	3344.050	Subj_040:	Well, also from the fact that this is higher than
+
+3340.150	3341.900	Subj_052:	S- so that's a conclusion.
+
+3344.175	3348.575	Subj_050:	So switching this to same first speech recognition is not a dominant factor. 
+
+3346.025	3346.925	Subj_002:	Mhm.
+
+3348.875	3353.725	Subj_050:	And then say the other point that the ~R square value for word error is only eleven percent laid out.
+
+3349.375	3349.950	Subj_052:	Yeah, 
+
+3353.700	3362.300	Subj_052:	{breath} M- my -- I guess my my sense is that you're -- you're so close to this and you've thought about it in such detail for so long
+
+3362.500	3374.925	Subj_040:	Okay, mhm. Okay, so.
+
+3363.275	3371.300	Subj_052:	that it -- a lot of things seem obvious to you. But to a novice, or mm uh say Marty or or 
+
+3372.400	3373.525	Subj_052:	Donna -- well 
+
+3374.300	3376.325	Subj_052:	people from other groups. uh 
+
+3376.775	3377.625	Subj_052:	won't won't 
+
+3379.925	3380.750	Subj_052:	won't follow. 
+
+3380.950	3381.475	Subj_040:	Okay. 
+
+3383.275	3389.575	Subj_052:	So you need to strut your stuff, but uh do so i- i- i- in a confident way. 
+
+3393.375	3400.325	Subj_040:	So I need a better explanation of this whole slide is basically the deal. Yeah, okay. 
+
+3396.175	3396.675	Subj_052:	Yeah.
+
+3396.750	3425.825	Subj_002:	Maybe you could just rearrange it a little bit. Because I noticed you weren't working linearly through the slide, and that was driving me bananas. And that's why maybe all your main points you made were on it, but I just -- I got lost. Other than that, I think it's -- 
+
+3407.300	3422.800	Subj_040:	Yeah. Okay. Okay. Okay. mm. mm. Okay.
+
+3413.475	3415.575	Subj_050:	Mhm. I I agree with that comment.
+
+3422.725	3426.050	Subj_022:	A lot of work to do (( )) 
+
+3424.050	3426.650	Subj_052:	Hey did -- did you -- did you uh 
+
+3424.925	3425.550	Subj_050:	uh.
+
+3427.125	3430.150	Subj_052:	uh mm mm did you start out with that 
+
+3430.675	3433.225	Subj_052:	photo? That ~J peg file that the guy sent? 
+
+3434.300	3435.050	Subj_052:	In email. 
+
+3435.525	3436.025	Subj_040:	No. 
+
+3436.350	3436.825	Subj_052:	Oh. 
+
+3437.100	3437.925	Subj_022:	{laugh} 
+
+3437.550	3444.325	Subj_002:	What thing? 
+
+3438.475	3443.100	Subj_052:	Well he uh he uh um -- ah somebody took a picture of him giving his presentation. 
+
+3443.375	3444.550	Subj_052:	And it's very nice. 
+
+3444.825	3450.925	Subj_052:	He looks poised and the f- the foil ah ah ah in the background is sharp focused and everything.
+
+3447.225	3458.500	Subj_040:	((Michael Wagner)) ((Michael Wagner)) who is the session chair took a picture of everyone who was presenting in his session and then e-mailed them out to us. 
+
+3459.700	3464.900	Subj_052:	Yeah, you remember, I responded to you, saying that that I thought you ought to include it in this presentation. 
+
+3462.475	3476.500	Subj_040:	You like them? Oh well. All right. All right. Thank you.
+
+3466.300	3467.950	Subj_022:	{laugh} 
+
+3466.850	3470.750	Subj_052:	You could just just have it as a cover slide ah in the first 
+
+3470.100	3476.600	Subj_022:	{laugh} 
+
+3471.825	3473.500	Subj_052:	mm thing. It's a good picture. 
+
+3474.175	3475.225	Subj_050:	Well good luck tomorrow.
+
+3475.250	3490.825	Subj_002:	Yeah. Audrey if you want to re-do your slides, I'll take a look at them, uh if you can do that before I go? 
+
+3479.825	3495.700	Subj_040:	((Better)) at the end. We've presented these results. Okay. How long did I talk? Sorry.
+
+3481.075	3483.425	Subj_052:	uh The -- uh {laugh} uh 
+
+3491.850	3494.800	Subj_022:	When do you go? When do you go?
+
+3493.200	3496.000	Subj_002:	Well.

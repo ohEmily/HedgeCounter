@@ -45,24 +45,33 @@ public class Speaker
 	 */
 	public boolean considerHedge(String possibleHedge)
 	{
-		for (int i = 0; i < Tester.POTENTIAL_PROP_HEDGES.length; i++)
+		if (isPropHedge(possibleHedge) || isRelHedge(possibleHedge))
+			return true;
+		return false;
+	}
+	
+	private boolean isPropHedge(String possibleHedge)
+	{
+		LinkedList<String> potentialHProps = DataStore.getPotentialhProps();
+		if (potentialHProps.contains(possibleHedge))
 		{
-			if (possibleHedge.contains(Tester.POTENTIAL_PROP_HEDGES[i]))
-			{
-				numberOfPropHedges++;
-				addToHedgeList(possibleHedge);
-				return true;
-			}
+			numberOfPropHedges++;
+			addToHedgeList(possibleHedge);
+			return true;
 		}
-		for (int i = 0; i < Tester.POTENTIAL_REL_HEGES.length; i++)
+		return false;
+	}
+	
+	private boolean isRelHedge(String possibleHedge)
+	{
+		LinkedList<String> potentialHRels = DataStore.getPotentialhRels();
+		if (potentialHRels.contains(possibleHedge))
 		{
-			if (possibleHedge.contains(Tester.POTENTIAL_REL_HEGES[i]))
-			{
-				numberOfRelHedges++;
-				addToHedgeList(possibleHedge);
-				return true;
-			}
+			numberOfRelHedges++;
+			addToHedgeList(possibleHedge);
+			return true;
 		}
+		
 		return false;
 	}
 	
