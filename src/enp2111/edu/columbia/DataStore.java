@@ -10,23 +10,27 @@ import java.util.Scanner;
 public class DataStore 
 {
 	// TODO multiword hedges
-	private static LinkedList<String> potential_hRels, potential_hProps, potential_multiwords;
+	private static LinkedList<String> potential_hRels, potential_hProps, 
+			potential_hRel_multiwords, potential_hProp_multiwords;
 	private static final String hedgeDelimeter = "\\t";
 	
 	/** Constructor */
 	public DataStore(String list_hRel_filepath, String list_hProp_filepath, 
-			String list_multiword_filepath)
+			String list_hRel_multiword_filepath, 
+			String list_hProp_multiword_filepath)
 	{		
 		potential_hRels = new LinkedList<String>();
 		potential_hProps = new LinkedList<String>();
-		potential_multiwords = new LinkedList<String>();
+		potential_hRel_multiwords = new LinkedList<String>();
+		potential_hProp_multiwords = new LinkedList<String>();
 		
 		setArray(list_hRel_filepath, potential_hRels);
 		setArray(list_hProp_filepath, potential_hProps);
-		setArray(list_multiword_filepath, potential_multiwords);
+		setArray(list_hRel_multiword_filepath, potential_hRel_multiwords);
+		setArray(list_hProp_multiword_filepath, potential_hProp_multiwords);
 		
 		// Testing if arrays fill properly
-//		System.out.println(toString());
+		System.out.println(toString());
 	}
 	
 	/**
@@ -65,8 +69,10 @@ public class DataStore
 			all += each;
 		for (String each : potential_hProps)
 			all += each;
-		for (String each : potential_multiwords)
-			all += each;
+		for (String each : potential_hRel_multiwords)
+			all += each + "\n";
+		for (String each : potential_hProp_multiwords)
+			all += each  + "\n";
 		return all;
 	}
 	
@@ -80,8 +86,13 @@ public class DataStore
 		return potential_hProps;
 	}
 	
-	public static LinkedList<String> getPotentialMultiwords()
+	public static LinkedList<String> getPotentialhRelMultiwords()
 	{
-		return potential_multiwords;
+		return potential_hRel_multiwords;
+	}
+	
+	public static LinkedList<String> getPotentialhPropMultiwords()
+	{
+		return potential_hProp_multiwords;
 	}
 }

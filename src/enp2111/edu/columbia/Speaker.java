@@ -43,13 +43,13 @@ public class Speaker
 	 * Registers the hedge, if it is a hedge.
 	 * @param possibleHedge
 	 */
-	public boolean considerHedge(String possibleHedge)
+	public boolean isHedge(String possibleHedge)
 	{
 		if (isPropHedge(possibleHedge) || isRelHedge(possibleHedge))
 			return true;
 		return false;
 	}
-	
+
 	private boolean isPropHedge(String possibleHedge)
 	{
 		LinkedList<String> potentialHProps = DataStore.getPotentialhProps();
@@ -71,7 +71,44 @@ public class Speaker
 			addToHedgeList(possibleHedge);
 			return true;
 		}
-		
+
+		return false;
+	}
+
+	
+	public boolean containsMultiwordHedge(String possibleSentence)
+	{
+		if (hasMultiwordRelHedge(possibleSentence) || hasMultiwordPropHedge(possibleSentence))
+			return true;
+		return false;
+	}
+	
+	public boolean hasMultiwordRelHedge(String possibleSentenceHedge)
+	{
+		for (String each : DataStore.getPotentialhRelMultiwords())
+		{
+			if (possibleSentenceHedge.contains(each))
+			{
+				numberOfRelHedges++;
+				addToHedgeList(possibleSentenceHedge);
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	
+	public boolean hasMultiwordPropHedge(String possibleSentenceHedge)
+	{
+		for (String each : DataStore.getPotentialhPropMultiwords())
+		{
+			if (possibleSentenceHedge.contains(each))
+			{
+				numberOfPropHedges++;
+				addToHedgeList(possibleSentenceHedge);
+				return true;
+			}
+		}
 		return false;
 	}
 	
@@ -86,7 +123,8 @@ public class Speaker
 				"total number of hedges used: " + (numberOfRelHedges + numberOfPropHedges) + "\n\t\t" + 
 				"number of relational hedges: " + numberOfRelHedges + "\n\t\t" +
 				"number of propositional hedges: " + numberOfPropHedges + "\n\t" +
-				"number of turns: " + sentences.size() + "\n"
+				"number of sentences " + sentences.size() + "\n\t" +
+				"number of turns: " + turns.size() + "\n"
 				;
 	}
 	

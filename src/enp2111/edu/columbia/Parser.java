@@ -41,11 +41,12 @@ public class Parser
 		{
 			while (scanner.hasNextLine()) // loop until EOF
 			{
-				String nextLine = scanner.nextLine();
-				speaker = speakerList.getSpeaker(findSpeakerName(nextLine));
-				if (nextLine.length() != 0)
+				String currentLine = scanner.nextLine();
+				speaker = speakerList.getSpeaker(findSpeakerName(currentLine));
+				if (currentLine.length() != 0)
 				{
-					speaker = findHedgesInLine(nextLine, speaker);
+					speaker.containsMultiwordHedge(currentLine);
+					speaker = findHedgesInLine(currentLine, speaker);
 					speakerList = speakerList.add(speaker);
 				}
 			}
@@ -69,7 +70,7 @@ public class Parser
 			while (thisWord.matches(".*\\d.*"))
 				thisWord = scanner.next();
 			currentSpeaker.incrementWords();
-			if(currentSpeaker.considerHedge(thisWord))
+			if(currentSpeaker.isHedge(thisWord))
 				hedgePresent = true;
 			
 			if (thisWord.contains(".") || (!scanner.hasNext())) // if a period or end of paragraph
