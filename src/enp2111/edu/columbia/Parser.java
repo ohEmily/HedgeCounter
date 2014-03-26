@@ -77,7 +77,7 @@ public class Parser
 			if(currentSpeaker.isHedge(thisWord))
 				hedgePresent = true;
 			
-			if (thisWord.contains(".") || (!scanner.hasNext())) // if a period or end of paragraph
+			if (thisWord.contains(".") || thisWord.contains("!") || thisWord.contains("?") || (!scanner.hasNext())) // if a period or end of paragraph
 			{
 				if (hedgePresent)
 					currentSpeaker.incrementHedgedSentence();
