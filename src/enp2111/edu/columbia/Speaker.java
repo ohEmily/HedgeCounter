@@ -16,8 +16,8 @@ public class Speaker
 	private int numberOfRelHedges;
 	private LinkedList<String> hedgesUsed;
 	
-	private ArrayList<Boolean> sentences; // true if had hedge(s)
-	private ArrayList<Boolean> turns; // true if had hedge(s)
+	private LinkedList<Boolean> sentences; // true if had hedge(s)
+	private LinkedList<Boolean> turns; // true if had hedge(s)
 
 	/** Default constructor is made private because a speaker should have
 	 * a name. */
@@ -35,8 +35,8 @@ public class Speaker
 		numberOfWords = 0;
 		numberOfPropHedges = 0;
 		numberOfRelHedges = 0;
-		sentences = new ArrayList<Boolean>();
-		turns = new ArrayList<Boolean>();
+		sentences = new LinkedList<Boolean>();
+		turns = new LinkedList<Boolean>();
 	}
 	
 	/**

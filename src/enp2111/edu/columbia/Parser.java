@@ -16,12 +16,13 @@ import java.util.Scanner;
 
 public class Parser
 {
-	private final Path filePath;
 	public static final String NEW_SPEAKER_IDENTIFIER = "Subj_";
 	
 	private SpeakerList speakerList;
 	
 	private static final int TIMESTAMP_LENGTH = 11; // e.g. 0.150	10.450
+	
+	private final Path filePath;
 	
 	/**
    	Constructor.
@@ -37,7 +38,6 @@ public class Parser
 	 * replaced by a new empty HashMap every time a new speaker starts speaking. */
 	public final void parseByLine() throws IOException 
 	{
-//		Speaker speaker;
 		try (Scanner scanner = new Scanner(filePath, Tester.ENCODING.name()))
 		{
 			while (scanner.hasNextLine()) // loop until EOF
@@ -46,7 +46,6 @@ public class Parser
 				if ((currentLine = scanner.nextLine()).length() != 0)
 				{
 					findMultiwordHedgesInLine(currentLine);
-					
 				}
 			}
 		}
@@ -57,20 +56,15 @@ public class Parser
 		Speaker currentSpeaker = speakerList.getSpeaker(findSpeakerName(currentLine));
 		currentLine = currentLine.substring(TIMESTAMP_LENGTH, currentLine.length());
 		currentSpeaker.containsMultiwordHedge(currentLine);
-		currentSpeaker = findHedgesInLine(currentLine, currentSpeaker);
+		currentSpeaker = parseByWord(currentLine, currentSpeaker);
 		speakerList = speakerList.add(currentSpeaker);
-	}
-	
-	public final void parseByWord(String line)
-	{
-		
 	}
 	
 	/** 
    	 * Go through this line and return currentSpeaker with the number of 
    	 * hedges associated with currentSpeaker udated.
 	 */
-	public Speaker findHedgesInLine(String aLine, Speaker currentSpeaker)
+	public Speaker parseByWord(String aLine, Speaker currentSpeaker)
 	{
 		boolean hedgePresent = false;
 		//use a second Scanner to parse the content of each line 
