@@ -50,7 +50,7 @@ public class Speaker
 		return false;
 	}
 
-	private boolean isPropHedge(String possibleHedge)
+	public boolean isPropHedge(String possibleHedge)
 	{
 		LinkedList<String> potentialHProps = DataStore.getPotentialhProps();
 		if (potentialHProps.contains(possibleHedge))
@@ -62,7 +62,7 @@ public class Speaker
 		return false;
 	}
 	
-	private boolean isRelHedge(String possibleHedge)
+	public boolean isRelHedge(String possibleHedge)
 	{
 		LinkedList<String> potentialHRels = DataStore.getPotentialhRels();
 		if (potentialHRels.contains(possibleHedge))
